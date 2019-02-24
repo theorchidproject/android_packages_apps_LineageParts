@@ -27,12 +27,12 @@
             android:key="screenshot"
             android:title="@string/power_menu_screenshot_title"
             android:summary="@string/power_menu_screenshot_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <CheckBoxPreference
             android:key="airplane"
             android:title="@string/power_menu_airplane_title"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <CheckBoxPreference
             android:key="users"
@@ -53,7 +53,7 @@
             android:key="devicecontrols"
             android:title="@string/power_menu_devicecontrols_title"
             android:defaultValue="false"
-            android:enabled="false" />
+            android:enabled="true" />
 
     </PreferenceCategory>
 
@@ -65,7 +65,7 @@
             android:key="advanced_reboot"
             android:title="@string/power_menu_advanced_restart_title"
             android:summary="@string/power_menu_advanced_restart_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
