@@ -20,61 +20,62 @@
         android:icon="@drawable/ic_trust"
         android:summary="@string/trust_onboarding_description" />
 
-    <PreferenceCategory android:title="@string/trust_category_features">
+        
+<com.android.settingslib.widget.LayoutPreference
+        android:key="trust_animation"
+        android:layout="@layout/trust_animation" />
+
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="trust_notifications"
+            android:icon="@drawable/ic_alert"
+            android:title="@string/trust_notification_alerts_title"
+            android:summary="@string/trust_notifications_alerts_summary"
+            android:defaultValue="false" />
 
         <Preference
             android:key="trust_selinux"
             android:title="@string/trust_feature_selinux" />
 
+        <SwitchPreference
+            android:key="trust_warning_selinux"
+            android:icon="@drawable/ic_alert"
+            android:summary="@string/trust_warnings_selinux"
+            android:defaultValue="true" /> 
+
         <Preference
             android:key="trust_security_patch"
             android:title="@string/trust_feature_security_patches" />
 
+        
+        <SwitchPreference
+            android:key="trust_warning_keys"
+            android:icon="@drawable/ic_alert"
+            android:summary="@string/trust_warnings_keys"
+            android:defaultValue="true" />    
+
         <Preference
             android:key="trust_encryption"
             android:title="@string/trust_feature_encryption" />
-    </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="trust_category_tools"
-        android:title="@string/trust_category_tools">
 
         <lineageos.preference.LineageGlobalSettingListPreference
             android:key="trust_restrict_usb"
+            android:icon="@drawable/ic_usb"
             android:title="@string/trust_restrict_usb_title"
+            android:visibility="invisible"
             android:summary="@string/trust_restrict_usb_summary"
             android:entries="@array/trust_restrict_usb_entries"
             android:entryValues="@array/trust_restrict_usb_values"
             android:defaultValue="0" />
 
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
-            android:key="lineagestats" />
-
         <ListPreference
             android:key="sms_security_check_limit"
+            android:icon="@drawable/ic_message_alert"
             android:defaultValue="30"
             android:entries="@array/sms_security_check_limit_entries"
             android:entryValues="@array/sms_security_check_limit_values"
             android:summary="@string/sms_security_check_limit_summary"
             android:title="@string/sms_security_check_limit_title" />
-    </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="trust_category_warnings"
-        android:title="@string/trust_notification_alerts_title">
-
-        <org.lineageos.lineageparts.widget.WallOfTextPreference
-            android:icon="@drawable/ic_info"
-            android:summary="@string/trust_warnings_alerts_intro" />
-
-        <SwitchPreference
-            android:key="trust_warning_selinux"
-            android:summary="@string/trust_warnings_selinux"
-            android:defaultValue="true" />
-
-        <SwitchPreference
-            android:key="trust_warning_keys"
-            android:summary="@string/trust_warnings_keys"
-            android:defaultValue="true" />
-    </PreferenceCategory>
 </PreferenceScreen>

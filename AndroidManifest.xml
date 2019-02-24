@@ -206,6 +206,7 @@
         </activity-alias>
 
         <!-- Contributors Cloud (MyDeviceInfo category) -->
+   <!--     
         <activity-alias
             android:name=".contributors.ContributorsCloudFragment"
             android:label="@string/contributors_cloud_fragment_title"
@@ -225,8 +226,9 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/summary_empty" />
         </activity-alias>
-
+ -->
         <!-- Anonymous Statistics -->
+        <!--
         <receiver android:name=".lineagestats.ReportingServiceManager"
             android:enabled="true"
             android:exported="false"
@@ -250,6 +252,7 @@
                  android:label="ReportingService"
                  android:enabled="true"
                  android:exported="false" />
+        -->
 
         <activity android:name=".profiles.NFCProfile">
             <intent-filter>
