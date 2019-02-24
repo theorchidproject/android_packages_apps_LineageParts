@@ -16,9 +16,15 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+	<com.android.settingslib.widget.LayoutPreference
+        android:key="trust_animation"
+        android:layout="@layout/trust_animation" />	
+
+
     <org.lineageos.lineageparts.widget.WallOfTextPreference
         android:icon="@drawable/ic_trust"
         android:summary="@string/trust_onboarding_description" />
+		
 
     <PreferenceCategory android:title="@string/trust_category_features">
 
@@ -41,22 +47,32 @@
 
         <lineageos.preference.LineageGlobalSettingListPreference
             android:key="trust_restrict_usb"
+            android:icon="@drawable/ic_usb"
             android:title="@string/trust_restrict_usb_title"
+            android:visibility="gone"
             android:summary="@string/trust_restrict_usb_summary"
             android:entries="@array/trust_restrict_usb_entries"
             android:entryValues="@array/trust_restrict_usb_values"
             android:defaultValue="0" />
 
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
-            android:key="lineagestats" />
-
         <ListPreference
             android:key="sms_security_check_limit"
+            android:icon="@drawable/ic_message_alert"
             android:defaultValue="30"
             android:entries="@array/sms_security_check_limit_entries"
             android:entryValues="@array/sms_security_check_limit_values"
             android:summary="@string/sms_security_check_limit_summary"
             android:title="@string/sms_security_check_limit_title" />
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="trust_category_alerts">
+
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="trust_notifications"
+            android:title="@string/trust_notification_alerts_title"
+            android:summary="@string/trust_notifications_alerts_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -69,11 +85,13 @@
 
         <SwitchPreference
             android:key="trust_warning_selinux"
+            android:icon="@drawable/ic_alert"
             android:summary="@string/trust_warnings_selinux"
             android:defaultValue="true" />
 
         <SwitchPreference
             android:key="trust_warning_keys"
+            android:icon="@drawable/ic_info"
             android:summary="@string/trust_warnings_keys"
             android:defaultValue="true" />
     </PreferenceCategory>

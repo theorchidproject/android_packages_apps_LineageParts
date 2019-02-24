@@ -1,0 +1,1 @@
+System core security features will now be found in Trust, a centralised interface found in Settings > Security and Privacy Lineprovided by lineageOS. You may get a summary of the state of the fundamental security features of your device here.

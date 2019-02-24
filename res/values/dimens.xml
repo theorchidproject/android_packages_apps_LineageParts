@@ -44,5 +44,9 @@
     <dimen name="package_list_padding_top">16dp</dimen>
 
     <dimen name="color_mode_preview_height">320dp</dimen>
+
+    <dimen name="lightning_preference_category_height">40.0dip</dimen>
+    <dimen name="lightning_preference_category_line_margin_start">10.0dip</dimen>
+    <dimen name="lightning_preference_category_padding_top">0.0dip</dimen>
 </resources>
 
