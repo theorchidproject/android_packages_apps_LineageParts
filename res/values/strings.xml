@@ -45,7 +45,7 @@
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_title">Privacy</string>
-    <string name="privacy_settings_category" translatable="false">LineageOS</string>
+    <string name="privacy_settings_category" translatable="false">PepsiOs</string>
 
     <!-- Notification channels -->
     <string name="channel_light_settings_id" translatable="false">light_settings</string>
@@ -434,7 +434,7 @@
     <string name="doze_title">Ambient display</string>
 
     <!-- Status bar -->
-    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_title">System Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Left</string>
@@ -535,11 +535,11 @@
 
     <!-- Anonymous Statistics #Lineage -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">LineageOS statistics</string>
-    <string name="anonymous_statistics_summary">Help make LineageOS better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_title">PepsiOs statistics</string>
+    <string name="anonymous_statistics_summary">Help make PepsiOs better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
-    <string name="anonymous_statistics_warning">Opting into LineageOS Statistics will allow non-personal data to be submitted to the
-        developers of LineageOS to track unique installations across devices. The information submitted includes an unique identifier,
+    <string name="anonymous_statistics_warning">Opting into PepsiOs Statistics will allow non-personal data to be submitted to the
+        developers of PepsiOs to track unique installations across devices. The information submitted includes an unique identifier,
         which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
     <string name="enable_reporting_title">Enable reporting</string>
     <string name="preview_data_title">Preview data</string>
@@ -633,7 +633,7 @@
     <string name="touchscreen_gesture_action_ambient_display">Show ambient display</string>
 
     <!-- Egg: Title for the easter egg activity -->
-    <string name="egg_title" translatable="false">LineageOS Easter Egg</string>
+    <string name="egg_title" translatable="false">PepsiOs Easter Egg</string>
 
     <!-- Trust interface -->
     <string name="trust_title" translatable="false">@*lineageos.platform:string/trust_feature_name</string>
@@ -661,8 +661,8 @@
     <string name="trust_warnings_alerts_intro">You can select the security issues you want to be warned about. For your safety, it is recommended to enable all alerts</string>
     <string name="trust_warnings_selinux">SELinux status</string>
     <string name="trust_warnings_keys">Build signature</string>
-    <string name="trust_onboarding_title">Say hello to Trust</string>
-    <string name="trust_onboarding_description">Trust helps you keep your device secure and protect your privacy.\nThe Trust icon will only show when the contents of the page have been verified.</string>
+    <string name="trust_onboarding_title">Say hello to PepsiOsTrust</string>
+    <string name="trust_onboarding_description">Trust helps you keep your device secure while at work.\nThe Trust icon will only show when the contents of the page have been verified.</string>
     <string name="trust_onboarding_learn_more">Learn more</string>
     <string name="trust_onboarding_done">Got it</string>
     <string name="trust_restrict_usb_title">Restrict USB</string>
